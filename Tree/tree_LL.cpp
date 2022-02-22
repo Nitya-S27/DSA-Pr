@@ -271,6 +271,24 @@ Tree *leafDelete(Tree *root)
     return root;
 }
 
+bool isBST(Tree *root)
+{
+    Tree *temp = root;
+    if (temp == NULL)
+        return 1;
+
+    if (temp->lChild != NULL && temp->lChild->data > temp->data)
+        return 0;
+
+    if (temp->rChild != NULL && temp->rChild->data < temp->data)
+        return 0;
+
+    if (!isBST(temp->lChild) || !isBST(temp->rChild))
+        return 0;
+
+    return 1;
+}
+
 int main()
 {
     Tree *root = takeInput();
@@ -316,5 +334,13 @@ int main()
     cin >> node;
     cout << "Root is present or not : " << isPresent(root, node);
     cout << endl;
+
+    cout << "Is the given tree a BST ? yes or no : ";
+    if (isBST(root))
+        cout << "YES";
+    else
+        cout << "NO";
+    cout << endl;
+
     return 0;
 }
