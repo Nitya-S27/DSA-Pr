@@ -1,0 +1,22 @@
+Time Complexities -
+
+Data structure	            Access  	Search  	   Insertion      Deletion
+
+Array	                    O(1)	      O(N)	         O(N)	         O(N)
+Stack	                    O(N)	      O(N)	         O(1)	         O(1)
+Queue	                    O(N)	      O(N)	         O(1)	         O(1)
+Singly Linked list	        O(N)	      O(N)	         O(1)	         O(1)
+Doubly Linked List	        O(N)	      O(N)	         O(1)	         O(1)
+Hash Table	                O(N)	      O(N)	         O(N)	         O(N)
+Binary Search Tree	        O(N)	      O(N)	         O(N)	         O(N)
+AVL Tree	                O(log N)	  O(log N)	     O(log N)        O(log N)
+Binary Tree	                O(N)	      O(N)	         O(N)	         O(N)
+Red Black Tree	            O(log N)	  O(log N)	     O(log N)        O(log N)
+
+
+array - leaderboards
+LL - music players
+Stack - Infix to postfix, undo operations
+Queue - Sending emails
+Graph - GPS Navigation
+Tree - Domain Name Servers (DNS)
